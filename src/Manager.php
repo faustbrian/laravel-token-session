@@ -44,9 +44,6 @@ class Manager
         $this->manager->save();
     }
 
-    /**
-     *
-     */
     public function logout()
     {
         $this->manager->forget('access_token');
@@ -130,9 +127,6 @@ class Manager
         $this->manager->save();
     }
 
-    /**
-     *
-     */
     public function flush()
     {
         $this->manager->flush();

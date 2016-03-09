@@ -39,7 +39,7 @@ class ServiceProvider extends \DraperStudio\ServiceProvider\ServiceProvider
     {
         return array_merge(parent::provides(), ['token.session']);
     }
-    
+
     /**
      * Get the default package name.
      *
