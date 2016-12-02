@@ -11,10 +11,10 @@
 
 namespace BrianFaust\Tests\TokenSession\Facades;
 
-use GrahamCampbell\TestBenchCore\FacadeTrait;
 use BrianFaust\Tests\TokenSession\AbstractTestCase;
 use BrianFaust\TokenSession\Facades\TokenSession;
 use BrianFaust\TokenSession\Manager;
+use GrahamCampbell\TestBenchCore\FacadeTrait;
 
 class FacadeTest extends AbstractTestCase
 {
