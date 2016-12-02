@@ -46,12 +46,12 @@ class Manager
 
     public function guest()
     {
-        return ! $this->check();
+        return !$this->check();
     }
 
     public function user(array $user = [])
     {
-        if (! empty($user)) {
+        if (!empty($user)) {
             $this->manager->put('user', new Collection($user));
 
             $this->manager->save();
@@ -72,7 +72,7 @@ class Manager
 
     public function get($key, $default = null)
     {
-        if (! $this->user()->has($key)) {
+        if (!$this->user()->has($key)) {
             return false;
         }
 
