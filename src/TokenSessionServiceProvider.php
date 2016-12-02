@@ -11,7 +11,9 @@
 
 namespace BrianFaust\TokenSession;
 
-class ServiceProvider extends \BrianFaust\ServiceProvider\ServiceProvider
+use BrianFaust\ServiceProvider\ServiceProvider;
+
+class TokenSessionServiceProvider extends ServiceProvider
 {
     public function register()
     {
