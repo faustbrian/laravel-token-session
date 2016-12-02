@@ -11,27 +11,19 @@ $ composer require faustbrian/laravel-token-session
 And then, if using Laravel 5, include the service provider within `app/config/app.php`.
 
 ``` php
-'providers' => [
-    // ... Illuminate Providers
-    // ... App Providers
-    BrianFaust\TokenSession\ServiceProvider::class
-];
+BrianFaust\TokenSession\TokenSessionServiceProvider::class
 ```
 
 And, for convenience, add a facade alias to this same file at the bottom:
 
 ``` php
-'aliases' => [
-    // ... Illuminate Facades
-    'TokenSession' => BrianFaust\TokenSession\Facades\TokenSession::class
-];
+'TokenSession' => BrianFaust\TokenSession\Facades\TokenSession
 ```
 
 ## Usage
 
 ``` php
-$skeleton = new BrianFaust\Skeleton();
-echo $skeleton->echoPhrase('Hello, BrianFaust!');
+...
 ```
 
 ## Security
