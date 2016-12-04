@@ -32,7 +32,7 @@ class Manager
         $this->manager = $manager;
     }
 
-    public function attempt($token, array $user = [])
+    public function attempt($token, array $user = []): void
     {
         $this->manager->put('access_token', $token);
 
@@ -41,7 +41,7 @@ class Manager
         $this->manager->save();
     }
 
-    public function logout()
+    public function logout(): void
     {
         $this->manager->forget('access_token');
 
@@ -50,7 +50,7 @@ class Manager
         $this->manager->save();
     }
 
-    public function check()
+    public function check(): bool
     {
         return $this->manager->has('access_token');
     }
@@ -71,12 +71,12 @@ class Manager
         return $this->manager->get('user');
     }
 
-    public function token()
+    public function token(): string
     {
         return $this->manager->get('access_token');
     }
 
-    public function id()
+    public function id(): int
     {
         return $this->user()->get('id');
     }
@@ -90,21 +90,21 @@ class Manager
         return $this->user()->get($key, $default);
     }
 
-    public function set($name, $value)
+    public function set($name, $value): void
     {
         $this->user()->put($name, $value);
 
         $this->manager->save();
     }
 
-    public function flush()
+    public function flush(): void
     {
         $this->manager->flush();
 
         $this->manager->save();
     }
 
-    public function regenerate($destroy = false)
+    public function regenerate($destroy = false): void
     {
         $this->manager->regenerate($destroy);
 
