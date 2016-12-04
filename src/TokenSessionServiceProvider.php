@@ -22,9 +22,9 @@ declare(strict_types=1);
 
 namespace BrianFaust\TokenSession;
 
-use BrianFaust\ServiceProvider\ServiceProvider;
+use BrianFaust\ServiceProvider\AbstractServiceProvider;
 
-class TokenSessionServiceProvider extends ServiceProvider
+class TokenSessionServiceProvider extends AbstractServiceProvider
 {
     public function register(): void
     {
