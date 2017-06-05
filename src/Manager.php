@@ -1,8 +1,5 @@
 <?php
 
-
-declare(strict_types=1);
-
 /*
  * This file is part of Laravel Token Session.
  *
@@ -24,7 +21,7 @@ class Manager
         $this->manager = $manager;
     }
 
-    public function attempt($token, array $user = []): void
+    public function attempt($token, array $user = [])
     {
         $this->manager->put('access_token', $token);
 
@@ -33,7 +30,7 @@ class Manager
         $this->manager->save();
     }
 
-    public function logout(): void
+    public function logout()
     {
         $this->manager->forget('access_token');
 
@@ -82,21 +79,21 @@ class Manager
         return $this->user()->get($key, $default);
     }
 
-    public function set($name, $value): void
+    public function set($name, $value)
     {
         $this->user()->put($name, $value);
 
         $this->manager->save();
     }
 
-    public function flush(): void
+    public function flush()
     {
         $this->manager->flush();
 
         $this->manager->save();
     }
 
-    public function regenerate($destroy = false): void
+    public function regenerate($destroy = false)
     {
         $this->manager->regenerate($destroy);
 
