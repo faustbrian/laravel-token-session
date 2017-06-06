@@ -15,6 +15,9 @@ use Illuminate\Support\ServiceProvider;
 
 class TokenSessionServiceProvider extends ServiceProvider
 {
+    /**
+     * Register any application services.
+     */
     public function register()
     {
         $this->app->singleton('token.session', function ($app) {
