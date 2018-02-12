@@ -13,10 +13,10 @@ declare(strict_types=1);
 
 namespace BrianFaust\Tests\TokenSession\Facades;
 
+use BrianFaust\Tests\TokenSession\AbstractTestCase;
+use BrianFaust\TokenSession\Facades\TokenSession;
 use BrianFaust\TokenSession\Manager;
 use GrahamCampbell\TestBenchCore\FacadeTrait;
-use BrianFaust\TokenSession\Facades\TokenSession;
-use BrianFaust\Tests\TokenSession\AbstractTestCase;
 
 class FacadeTest extends AbstractTestCase
 {
