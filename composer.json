@@ -1,17 +1,24 @@
 {
     "name": "artisanry/token-session",
     "description": "",
-    "keywords": ["laravel", "framework", "Laravel-token-session", "Laravel Token Session"],
+    "keywords": [
+        "laravel",
+        "framework",
+        "Laravel-token-session",
+        "Laravel Token Session"
+    ],
     "license": "MIT",
-    "authors": [{
-        "name": "Brian Faust",
-        "email": "hello@basecode.sh",
-        "homepage": "https://basecode.sh"
-    }],
+    "authors": [
+        {
+            "name": "Brian Faust",
+            "email": "hello@basecode.sh",
+            "homepage": "https://basecode.sh"
+        }
+    ],
     "require": {
-        "php": "^7.1",
-        "illuminate/support": "^5.6",
-        "illuminate/session": "^5.6"
+        "php": "^7.2",
+        "illuminate/support": "^5.8",
+        "illuminate/session": "^5.8"
     },
     "require-dev": {
         "graham-campbell/testbench": "^5.0",
