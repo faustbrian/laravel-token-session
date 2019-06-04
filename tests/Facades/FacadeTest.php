@@ -5,17 +5,17 @@ declare(strict_types=1);
 /*
  * This file is part of Laravel Token Session.
  *
- * (c) Brian Faust <hello@brianfaust.de>
+ * (c) Brian Faust <hello@basecode.sh>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
 
-namespace BrianFaust\Tests\TokenSession\Facades;
+namespace Artisanry\Tests\TokenSession\Facades;
 
-use BrianFaust\Tests\TokenSession\AbstractTestCase;
-use BrianFaust\TokenSession\Facades\TokenSession;
-use BrianFaust\TokenSession\Manager;
+use Artisanry\Tests\TokenSession\AbstractTestCase;
+use Artisanry\TokenSession\Facades\TokenSession;
+use Artisanry\TokenSession\Manager;
 use GrahamCampbell\TestBenchCore\FacadeTrait;
 
 class FacadeTest extends AbstractTestCase
